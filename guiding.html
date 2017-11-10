@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/classification.css"/>
+
+    <title>引导页</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+        }
+        .cover_open{
+            width: 100%;
+        }
+        .top_right{
+            width: 1.16rem;
+            height: 0.46rem;
+            background: url("img/jump@1x.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 0.3rem;
+            right: 0.18rem;
+        }
+        .top_right span{
+            color: #a31515;
+            text-align: right;
+            font-size: 0.26rem;
+            position: relative;
+            left: 0.76rem;
+            top: 0.08rem;
+        }
+    </style>
+</head>
+<body>
+<div class="img_bg"></div>
+<div id="allmap"></div>
+<div class="top_right">
+    <span id="djs">3s</span>
+</div>
+</body>
+<script src="js/auto-size.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=dfGoYEGXpGY4UPYZg0sgocWqwXjSdDZ2"></script>
+<script>
+    function beij() {
+        var numb=parseInt(10*Math.random())
+//      alert(numb)
+        if(numb<=3){
+            $(".img_bg").append("<img src='img/001.png' class=\"cover_open\"/>")
+
+        }
+        if(numb<=6&&numb>3){
+            $(".img_bg").append("<img src='img/002.png' class=\"cover_open\"/>")
+        }
+        if(numb<=10&&numb>6){
+            $(".img_bg").append("<img src='img/003.png' class=\"cover_open\"/>")
+        }
+    }
+    beij()
+//  定位所在城市
+	var map = new BMap.Map("allmap");
+    var point = new BMap.Point(116.331398,39.897445);
+    map.centerAndZoom(point,12);
+    function myFun(result){
+	    var cityName = result.name ;
+        map.setCenter(cityName);
+        alert("当前定位城市:"+cityName);
+	}
+    var myCity = new BMap.LocalCity();
+    myCity.get(myFun);
+    
+
+    
+    var countdown=null;
+    function ind(num) {
+        var count = num;
+        countdown = setInterval(CountDown, 1000);
+        function CountDown() {
+            $("#djs").html(count + "s");
+	            if (count == 0) {
+	                clearInterval(countdown);
+	               //	是否注册登录
+	               if(localStorage.login!=null){
+						alert('您已成功登录，手机号：'+localStorage.login+'\n您可以在我的个人设置里切换账号重新登录！')
+						window.location.href='index.html';
+	               }
+					else{
+						alert('您还未在红韵注册或登录，即将跳转到登录页面')
+						window.location.href='login_first.html';
+					}
+	            }
+            count--;
+        }
+    }
+    ind(3)
+    $(".top_right").click(function () {
+        alert('想跳过？做梦！再等30s')
+        clearInterval(countdown);
+        ind(30);
+    })
+    document.addEventListener('touchmove', function(event) {
+    var e = event||window.event;
+    var p = event.target.closest('.demo');
+    if (!p) {
+        e.preventDefault();
+    }
+},{passive:false});
+</script>
+</html>

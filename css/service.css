@@ -1,0 +1,143 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, li, span {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #fcf5eb;
+    font-size: 0;
+}
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+}
+.join p{
+    font-size: 0.3rem;
+    background: #fffcf8;
+    border-radius: 0.04rem;
+    display: inline-block;
+    width: 5.02rem;
+    margin-left: 0.3rem;
+    margin-top: 0.3rem;
+    padding-top: 0.1rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    min-height: 1.1rem;
+    border-radius: 0.1rem;
+    word-break: break-all;
+}
+.cl{
+    display: inline-block;
+    overflow: hidden;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.wth_100{
+    width: 100%;
+}
+.bg_top{
+    height: 10.4rem;
+    background: url("../img/background@1x.png") no-repeat;
+    background-size: contain;
+}
+.nav{
+    background: #fcf5eb;
+    height: 0.88rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+.nav_1{
+    height: 0.8rem;
+    width: 0.8rem;
+    position: absolute;
+    left: 0.44rem;
+    bottom: 0.04rem;
+}
+.nav_2{
+    height: 0.8rem;
+    width: 0.8rem;
+    background: rgb(154,149,143);
+    position: absolute;
+    right: 0.44rem;
+    bottom: 0.04rem;
+}
+.nav_1p {
+    position: relative;
+    width: 0.2rem;
+    top: 0.2rem;
+    left: 0.24rem;
+}
+.nav_2p {
+    position: relative;
+    width: 0.18rem;
+    top: -0.58rem;
+    left: 0.32rem;
+}
+.nav_cus{
+    width: 100%;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    text-align: center;
+    font-size: 0.36rem;
+    font-weight: 500;
+}
+
+
+
+.sur1{
+    height: 1.3rem;
+}
+.surhead{
+    margin-left: 0.3rem;
+    margin-top: 0.3rem;
+    width: 0.92rem;
+    vertical-align: top;
+}
+.sur2{
+    width: 5.42rem;
+    vertical-align: middle;
+}
+
+
+
+
+
+.speak{
+    width: 7.5rem;
+    height: 1rem;
+    position: fixed;
+    background: url("../img/kefu_tal.png") no-repeat;
+    background-size: cover;
+    bottom: 0rem;
+    z-index: 5;
+    font-size: 0;
+}
+#con{
+    position: relative;
+    width: 5rem;
+    height: 0.6rem;
+    font-size: 0.3rem;
+    margin-left: 0.9rem;
+    margin-top: 0.18rem;
+    border: none;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

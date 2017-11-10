@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+    <title>手机登陆</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="javascript:history.go(-1);"><div class="nav_1"><img src="img/arrow.png" class="nav_1p"></div></a>
+        <div class="nav_3">
+            忘记密码
+        </div>
+    </div>
+
+    <div class="login_bg">
+        <p class="login_zh">手机号</p>
+        <input type="tel" name="" id="login_zh" placeholder="请输入您的手机">
+        <p class="login_mm">密码</p>
+        <input type="password" name="" id="login_mm" placeholder="请输入您的密码"><br>
+        <div class="kung"><img src="img/login_click.png" id="visual"></div>
+        <span class="visual">显示密码</span>
+        <p class="login_btn0"><a href="#" id="zhuan"><img src="img/login_mear.png" class="login_btn"></a></p>
+    </div>
+
+
+
+
+
+
+</body>
+<script src="js/auto-size.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	document.addEventListener('touchmove', function(event) {
+	    var e = event||window.event;
+	    var p = event.target.closest('.demo');
+	    if (!p) {
+	        e.preventDefault();
+	    }
+	},{passive:false});
+    $('.kung').click(function () {
+        if($('#visual').css('opacity')==0){
+            $('#visual').css('opacity','1');
+            $('#login_mm').attr('type','text')
+        }
+        else {
+            $('#visual').css('opacity','0');
+            $('#login_mm').attr('type','password')
+        }
+    })
+    $('#login_zh').bind('input change', function() {
+        if ($('#login_zh').val().length == 11) {
+            if ($('#login_mm').val().length < 6) {
+            	$('.login_btn').attr("src", 'img/login_mear.png');
+                $('#zhuan').attr('href','#')
+            }
+            else {
+            	if(isNaN($('#login_mm').val())){
+            		$('.login_btn').attr("src", 'img/login_ing.png');
+                	$('#zhuan').attr('href','index.html')
+            	}
+                else{
+                	$('.login_btn').attr("src", 'img/login_mear.png');
+                	$('#zhuan').attr('href','#')
+                }
+            }
+        }
+        else {
+            $('.login_btn').attr("src", 'img/login_mear.png');
+            $('#zhuan').attr('href','#')
+        }
+    })
+    $('#login_mm').bind('input change', function() {
+        if ($('#login_zh').val().length == 11&&$('#login_zh').val()[0]=='1') {
+            if ($('#login_mm').val().length < 6) {
+            	$('.login_btn').attr("src", 'img/login_mear.png');
+                $('#zhuan').attr('href','#')
+            }
+            else {
+            	if(isNaN($('#login_mm').val())){
+            		$('.login_btn').attr("src", 'img/login_ing.png');
+                	$('#zhuan').attr('href','index.html')
+            	}
+                else{
+                	$('.login_btn').attr("src", 'img/login_mear.png');
+                	$('#zhuan').attr('href','#')
+                }
+            }
+        }
+        else {
+            $('.login_btn').attr("src", 'img/login_mear.png');
+            $('#zhuan').attr('href','#')
+        }
+    })
+    $('#zhuan').click(function(){
+    	if(isNaN($('#login_zh').val())||$('#login_zh').val()[0]!='1'){
+    		alert('您输入的手机号必须是纯数字并且第一个数字为1')
+    	}
+    	else{
+    		if(isNaN($('#login_mm').val())){
+    			localStorage.login=$('#login_zh').val();
+    		}
+    		else{
+    			alert('密码不能是纯数字')
+    		}
+    	}
+    })
+</script>
+</html>

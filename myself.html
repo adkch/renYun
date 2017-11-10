@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/myself.css"/>
+    <title>个人中心</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="javascript:history.go(-1);"><div class="nav_1"><img src="img/arrow.png" class="nav_1p"></div></a>
+    </div>
+    <div class="myself_bg">
+        <div class="top_my">
+            <h3>个人信息</h3>
+            <div class="self_mymag">
+                <img src="img/head_ph.png" class="head_ph">
+                <a href="vip.html"><img src="img/vip_bo.png" class="vip_bo"></a>
+            </div>
+        </div>
+        <div>
+            <div class="dimension">
+                <p class="cl click1">
+                    <span class="attribute left">昵称</span>
+                    <span class="go_fill right">
+                                十里浅秋
+                                <img src="img/arrow%20right.png" class="arrow_right">
+                            </span>
+                </p>
+                <p class="cl click2">
+                    <span class="attribute left">性别</span>
+                    <span class="go_fill right xingbie">
+                                扶她
+                                <img src="img/arrow%20right.png" class="arrow_right">
+                            </span>
+                </p>
+                <p class="cl click3">
+                    <span class="attribute left">生日</span>
+                    <span class="go_fill right">
+                                1992.11.21
+                                <img src="img/arrow%20right.png" class="arrow_right">
+                            </span>
+                </p>
+                <p class="cl click4">
+                    <span class="attribute left">电话</span>
+                    <span class="go_fill right dianhua">
+                                去绑定
+                                <img src="img/arrow%20right.png" class="arrow_right">
+                            </span>
+                </p>
+                <p class="cl click5">
+                    <span class="attribute left">收货地址</span>
+                    <a href="map.html"><span class="go_fill right bangding">
+                                去绑定
+                                <img src="img/arrow%20right.png" class="arrow_right">
+                            </span></a>
+                </p>
+                <p class="cl click6">
+                    <span class="go_fill right change">
+                                切换账号
+                                <img src="img/change_x.png" class="arrow_right1">
+                            </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/auto-size.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+//	e.point.lng + ", " + e.point.lat
+	if(localStorage.xinbie!=null){
+		$('.xingbie').html(localStorage.xinbie+'<img src="img/arrow%20right.png" class="arrow_right">')
+		$('.click2').click(function(){
+			xinbie = prompt("请填写您的性别:");
+			if(xinbie=='扶她'||xinbie=='秀吉'||xinbie=='女装大佬'){
+				localStorage.xinbie=xinbie;
+				window.location.href='myself.html';
+			}
+			else{
+				alert('性别填入失败！！！\n性别只有扶她，秀吉，女装大佬三种')
+			}
+		})
+	}
+	else{
+		$('.xingbie').html('扶她' + '<img src="img/arrow%20right.png" class="arrow_right">')
+		$('.click2').click(function(){
+			xinbie = prompt("请填写您的性别:");
+			if(xinbie=='扶她'||xinbie=='秀吉'||xinbie=='女装大佬'){
+				localStorage.xinbie=xinbie;
+				window.location.href='myself.html';
+			}
+			else{
+				alert('性别填入失败！！！\n性别只有扶她，秀吉，女装大佬三种')
+			}
+		})
+	}
+	if(localStorage.lat!=null){
+		$('.bangding').html(localStorage.lng + ", " + localStorage.lat+'<img src="img/arrow%20right.png" class="arrow_right">')
+	}
+	else{
+		$('.bangding').html('去绑定' + '<img src="img/arrow%20right.png" class="arrow_right">')
+	}
+	if(localStorage.age!=null){
+		$('.dianhua').html(localStorage.age+'<img src="img/arrow%20right.png" class="arrow_right">')
+		$('.click4').click(function(){
+			age = prompt("请输入您的电话:");
+			if(age.length==11){
+				localStorage.age=age;
+				window.location.href='myself.html';
+			}
+			else{
+				alert('您输入的电话号码有误')
+			}
+		})
+	}
+	else{
+		$('.dianhua').html('去绑定' + '<img src="img/arrow%20right.png" class="arrow_right">')
+		$('.click4').click(function(){
+			age = prompt("请输入您的电话:");
+			if(age.length==11){
+				localStorage.age=age;
+				window.location.href='myself.html';
+			}
+			else{
+				alert('您输入的电话号码有误')
+			}
+		})
+	}
+	$('.click6').click(function(){
+		if(confirm("您是否需要清空已有数据？"))
+        {
+        	localStorage.clear();
+          alert("您已清空已有数据\n即将返回登录页面");
+          window.location.href='login_first.html';
+        }
+        else 
+        {
+           alert("您的数据已保留\n即将返回登录页");
+           window.location.href='login_first.html';
+        }
+		
+	})
+ 
+	
+</script>
+</html>

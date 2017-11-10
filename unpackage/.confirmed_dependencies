@@ -1,0 +1,534 @@
+{
+  "vip.html": {
+    "href": "vip.html",
+    "resources": [
+      "js/auto-size.js",
+      "js/jquery-3.2.1.js",
+      "js/swiper-3.4.2.jquery.min.js",
+      "js/swiper-3.4.2.min.js",
+      "css/swiper-3.4.2.min.css",
+      "css/vip.css",
+      "img/vip_head.png",
+      "img/arrow.png",
+      "img/vip_lv.png"
+    ],
+    "refer": [
+      "my.html"
+    ],
+    "priority": 0
+  },
+  "login.html": {
+    "href": "login.html",
+    "resources": [
+      "js/auto-size.js",
+      "js/jquery-3.2.1.js",
+      "js/swiper-3.4.2.jquery.min.js",
+      "js/swiper-3.4.2.min.js",
+      "img/login_mear.png",
+      "img/login_ing.png",
+      "css/swiper-3.4.2.min.css",
+      "css/login.css",
+      "img/login_click.png",
+      "img/arrow.png",
+      "img/login_kung.png",
+      "img/login_bg.png",
+      "myself.html",
+      "index.html"
+    ],
+    "refer": [
+      "index.html",
+      "myself.html"
+    ],
+    "priority": 0
+  },
+  "myself.html": {
+    "href": "myself.html",
+    "resources": [
+      "js/auto-size.js",
+      "js/jquery-3.2.1.js",
+      "js/swiper-3.4.2.jquery.min.js",
+      "js/swiper-3.4.2.min.js",
+      "css/swiper-3.4.2.min.css",
+      "css/myself.css",
+      "img/arrow.png",
+      "img/head_ph.png",
+      "img/vip_bo.png",
+      "img/change_x.png",
+      "my.html",
+      "img/arrow right.png",
+      "img/myself_bg.png",
+      "login.html",
+      "map.html"
+    ],
+    "refer": [
+      "vip.html",
+      "login.html",
+      "my.html",
+      "map.html",
+      "index.html"
+    ],
+    "priority": 0
+  },
+  "shopdai.html": {
+    "href": "shopdai.html",
+    "resources": [
+      "js/auto-size.js",
+      "js/jquery-3.2.1.js",
+      "js/swiper-3.4.2.jquery.min.js",
+      "js/swiper-3.4.2.min.js",
+      "img/circle.png",
+      "css/swiper-3.4.2.min.css",
+      "css/shopdai.css",
+      "img/balance.png",
+      "img/1_01.png",
+      "img/1_02.png",
+      "img/delete.png",
+      "img/home.png",
+      "img/classify.png",
+      "img/custom.png",
+      "img/click4.png",
+      "img/my.png",
+      "index.html",
+      "my.html",
+      "classification.html",
+      "customization.html"
+    ],
+    "refer": [
+      "index.html",
+      "classification.html",
+      "customization.html",
+      "shopdai.html",
+      "my.html"
+    ],
+    "priority": 0
+  },
+  "service.html": {
+    "href": "service.html",
+    "resources": [
+      "js/auto-size.js",
+      "js/jquery-3.2.1.js",
+      "js/swiper-3.4.2.jquery.min.js",
+      "js/swiper-3.4.2.min.js",
+      "img/sur_head.png",
+      "img/sur_2.png",
+      "css/swiper-3.4.2.min.css",
+      "css/service.css",
+      "img/sur_1.png",
+      "img/arrow.png",
+      "img/kefu_tal.png",
+      "my.html",
+      "particulars.html"
+    ],
+    "refer": [
+      "my.html",
+      "particulars.html"
+    ],
+    "priority": 0
+  },
+  "particulars.html": {
+    "href": "particulars.html",
+    "resources": [
+      "js/auto-size.js",
+      "js/jquery-3.2.1.js",
+      "js/swiper-3.4.2.jquery.min.js",
+      "js/swiper-3.4.2.min.js",
+      "css/swiper-3.4.2.min.css",
+      "css/particulars.css",
+      "img/particulars_name.png",
+      "img/particulars_yoh.png",
+      "img/particulars_con.png",
+      "img/more2.png",
+      "img/arrow.png",
+      "img/more@1x.png",
+      "img/particulars1.png",
+      "img/particulars2.png",
+      "img/particulars3.png",
+      "img/particulars4.png",
+      "img/addtobag@1x.png",
+      "img/settlement@1x.png",
+      "img/kefu.png",
+      "service.html",
+      "index.html"
+    ],
+    "refer": [
+      "collect.html",
+      "shopdai.html",
+      "service.html",
+      "index.html"
+    ],
+    "priority": 0
+  },
+  "collect.html": {
+    "href": "collect.html",
+    "resources": [
+      "js/auto-size.js",
+      "js/jquery-3.2.1.js",
+      "js/swiper-3.4.2.jquery.min.js",
+      "js/swiper-3.4.2.min.js",
+      "img/col_logo.png",
+      "img/col_text.png",
+      "css/swiper-3.4.2.min.css",
+      "css/collect.css",
+      "img/arrow.png",
+      "img/collect2_01.png",
+      "img/delate2.png",
+      "img/collect1.png",
+      "img/collect2.png",
+      "index.html"
+    ],
+    "refer": [
+      "index.html",
+      "particulars.html",
+      "my.html"
+    ],
+    "priority": 0
+  },
+  "clearing.html": {
+    "href": "clearing.html",
+    "resources": [
+      "js/auto-size.js",
+      "js/jquery-3.2.1.js",
+      "js/swiper-3.4.2.jquery.min.js",
+      "js/swiper-3.4.2.min.js",
+      "css/swiper-3.4.2.min.css",
+      "css/clearing.css",
+      "img/qwe_03.png",
+      "img/cloth@1x.png",
+      "img/zxc_03.png",
+      "img/information@1x.png",
+      "img/question.png",
+      "img/more2.png",
+      "img/addtobag@1x.png",
+      "img/settlement@1x.png",
+      "img/arrow.png",
+      "img/more@1x.png",
+      "img/kefu.png",
+      "img/background@1x.png",
+      "img/shopping bag.png"
+    ],
+    "refer": [
+      "collect.html",
+      "shopdai.html",
+      "service.html"
+    ],
+    "priority": 0
+  },
+  "material.html": {
+    "href": "material.html",
+    "resources": [
+      "js/auto-size.js",
+      "js/jquery-3.2.1.js",
+      "js/swiper-3.4.2.jquery.min.js",
+      "js/swiper-3.4.2.min.js",
+      "css/swiper-3.4.2.min.css",
+      "css/material.css",
+      "img/sdf_03.png",
+      "img/dfg_03.png",
+      "img/fgha_03.png",
+      "img/cloth@1x.png",
+      "img/confirm@1x.png",
+      "img/arrow.png",
+      "img/1@1x.png",
+      "img/2@1x.png",
+      "img/3@1x.png",
+      "img/res1@1x.png",
+      "img/red2@1x.png",
+      "measure.html",
+      "img/back.png",
+      "img/rotate@1x.png",
+      "clearing.html"
+    ],
+    "refer": [
+      "clearing.html",
+      "measure.html"
+    ],
+    "priority": 0
+  },
+  "measure.html": {
+    "href": "measure.html",
+    "resources": [
+      "js/auto-size.js",
+      "js/jquery-3.2.1.js",
+      "js/swiper-3.4.2.jquery.min.js",
+      "js/swiper-3.4.2.min.js",
+      "css/swiper-3.4.2.min.css",
+      "css/sure.css",
+      "img/arrow.png",
+      "img/picture.png",
+      "img/question.png",
+      "img/asd_03.png",
+      "img/submit.png",
+      "img/arrow right.png",
+      "customization.html",
+      "material.html"
+    ],
+    "refer": [
+      "material.html",
+      "customization.html"
+    ],
+    "priority": 0
+  },
+  "customization.html": {
+    "href": "customization.html",
+    "resources": [
+      "js/auto-size.js",
+      "js/jquery-3.2.1.js",
+      "js/swiper-3.4.2.jquery.min.js",
+      "js/swiper-3.4.2.min.js",
+      "css/swiper-3.4.2.min.css",
+      "css/cus.css",
+      "img/cus_btn.png",
+      "img/arrow.png",
+      "img/procedure.png",
+      "img/question.png",
+      "img/cus1.png",
+      "img/cus2.png",
+      "measure.html",
+      "shopdai.html"
+    ],
+    "refer": [
+      "measure.html",
+      "shopdai.html",
+      "index.html",
+      "classification.html"
+    ],
+    "priority": 0
+  },
+  "classification.html": {
+    "href": "classification.html",
+    "resources": [
+      "js/auto-size.js",
+      "js/jquery-3.2.1.js",
+      "js/swiper-3.4.2.jquery.min.js",
+      "js/swiper-3.4.2.min.js",
+      "css/swiper-3.4.2.min.css",
+      "css/classification.css",
+      "img/search.png",
+      "img/message.png",
+      "img/banner05.png",
+      "img/01.png",
+      "img/02.png",
+      "img/03.png",
+      "img/04.png",
+      "img/menu.png",
+      "img/home.png",
+      "img/click2.png",
+      "img/custom.png",
+      "img/my.png",
+      "img/head_ph.png",
+      "img/night.png",
+      "img/settlement.png",
+      "img/vip_bo.png",
+      "img/code.png",
+      "index.html",
+      "shopdai.html"
+    ],
+    "refer": [
+      "index.html",
+      "classification.html",
+      "customization.html",
+      "shopdai.html",
+      "my.html"
+    ],
+    "priority": 0
+  },
+  "my.html": {
+    "href": "my.html",
+    "resources": [
+      "js/auto-size.js",
+      "js/jquery-3.2.1.js",
+      "js/swiper-3.4.2.jquery.min.js",
+      "js/swiper-3.4.2.min.js",
+      "css/swiper-3.4.2.min.css",
+      "css/my.css",
+      "img/head_ph.png",
+      "img/vip_bo.png",
+      "img/my_fu.png",
+      "img/my_shou.png",
+      "img/my_tui.png",
+      "img/my_shai.png",
+      "img/my_all.png",
+      "img/home.png",
+      "img/classify.png",
+      "img/custom.png",
+      "img/click5.png",
+      "img/my_sail.png",
+      "img/my_sele.png",
+      "img/my_yoh.png",
+      "img/my_time.png",
+      "img/my_advice.png",
+      "img/my_con.png",
+      "img/my_vip.png",
+      "img/my_pen.png",
+      "img/my_col.png",
+      "img/my_talker.png",
+      "img/my_bg.png",
+      "img/shopping bag.png",
+      "myself.html",
+      "index.html",
+      "shopdai.html",
+      "service.html"
+    ],
+    "refer": [
+      "myself.html",
+      "index.html",
+      "classification.html",
+      "customization.html",
+      "shopdai.html",
+      "my.html",
+      "vip.html",
+      "collect.html",
+      "service.html"
+    ],
+    "priority": 0
+  },
+  "thematic.html": {
+    "href": "thematic.html",
+    "resources": [
+      "js/auto-size.js",
+      "js/jquery-3.2.1.js",
+      "js/swiper-3.4.2.jquery.min.js",
+      "js/swiper-3.4.2.min.js",
+      "css/swiper-3.4.2.min.css",
+      "img/n2@1x.png",
+      "img/more2.png",
+      "img/arrow.png",
+      "img/more@1x.png"
+    ],
+    "refer": [
+      "collect.html"
+    ],
+    "priority": 0
+  },
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "js/auto-size.js",
+      "js/jquery-3.2.1.js",
+      "js/swiper-3.4.2.jquery.min.js",
+      "js/swiper-3.4.2.min.js",
+      "css/swiper-3.4.2.min.css",
+      "css/index.css",
+      "img/night.png",
+      "img/code.png",
+      "img/menu.png",
+      "img/search.png",
+      "img/message.png",
+      "img/newman1.png",
+      "img/newman2.png",
+      "img/newman3.png",
+      "img/newman4.png",
+      "img/topic.png",
+      "img/new.png",
+      "img/brand.png",
+      "img/theme.png",
+      "img/recommend.png",
+      "img/settlement.png",
+      "img/banner1.png",
+      "img/banner2.png",
+      "img/banner4.png",
+      "img/banner5.png",
+      "img/100.png",
+      "img/300.png",
+      "img/500.png",
+      "img/head_ph.png",
+      "img/vip_bo.png",
+      "img/click1.png",
+      "img/classify.png",
+      "img/custom.png",
+      "img/my.png",
+      "img/banner3.png",
+      "img/1.png",
+      "img/2.png",
+      "img/3.png",
+      "img/4.png",
+      "img/5.png",
+      "img/6.png",
+      "img/7.png",
+      "img/8.png",
+      "img/rentangle.png",
+      "img/shopping bag.png",
+      "my.html",
+      "classification.html",
+      "shopdai.html",
+      "particulars.html"
+    ],
+    "refer": [
+      "my.html",
+      "login.html",
+      "myself.html",
+      "vip.html",
+      "customization.html",
+      "collect.html",
+      "index.html",
+      "classification.html",
+      "shopdai.html",
+      "thematic.html",
+      "particulars.html"
+    ],
+    "priority": 0
+  },
+  "guiding.html": {
+    "href": "guiding.html",
+    "resources": [
+      "js/auto-size.js",
+      "js/jquery-3.2.1.js",
+      "js/swiper-3.4.2.jquery.min.js",
+      "js/swiper-3.4.2.min.js",
+      "img/001.png",
+      "img/003.png",
+      "img/002.png",
+      "css/swiper-3.4.2.min.css",
+      "css/classification.css",
+      "img/jump@1x.png",
+      "index.html",
+      "login_first.html"
+    ],
+    "refer": [
+      "index.html",
+      "login_first.html"
+    ],
+    "priority": 0
+  },
+  "open.html": {
+    "href": "open.html",
+    "resources": [
+      "js/auto-size.js",
+      "js/jquery-3.2.1.js",
+      "js/swiper-3.4.2.jquery.min.js",
+      "js/swiper-3.4.2.min.js",
+      "css/swiper-3.4.2.min.css",
+      "img/open.png",
+      "guiding.html"
+    ],
+    "refer": [
+      "guiding.html"
+    ],
+    "priority": 0
+  },
+  "login_first.html": {
+    "resources": [
+      "css/login_first.css",
+      "img/arrow.png",
+      "img/weixing.png",
+      "img/three_login.png",
+      "img/qq.png",
+      "img/welcome.png",
+      "img/login_first.png",
+      "login.html",
+      "guiding.html"
+    ],
+    "refer": [
+      "login.html",
+      "guiding.html"
+    ]
+  },
+  "map.html": {
+    "resources": [
+      "myself.html"
+    ],
+    "refer": [
+      "myself.html"
+    ]
+  }
+}

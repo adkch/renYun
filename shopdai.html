@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/shopdai.css"/>
+    <title></title>
+</head>
+<body>
+    <div class="nav">
+         <p class="nav_cus">购物袋</p>
+        <a href="#"><div class="nav_2">编辑</div></a>
+    </div>
+    <div class="navfooter">
+        <div class="navfooter_1">
+            <div class="navfooter_2" id="foot_1"><a href="index.html"><img src="img/home.png" class="wth_100 nft_1"></a></div>
+        </div>
+        <div class="navfooter_1 mg_l_21">
+            <div class="navfooter_3" id="foot_2"><a href="classification.html"><img src="img/classify.png" class="wth_100 nft_2"></a></div>
+        </div>
+        <div class="navfooter_1 mg_l_21">
+            <div class="navfooter_2" id="foot_3"><a href="customization.html"><img src="img/custom.png" class="wth_100 nft_1"></a></div>
+        </div>
+        <div class="navfooter_1 mg_l_21">
+            <div class="navfooter_4" id="foot_4"><a href="shopdai.html"><img src="img/click4.png" class="wth_100 nft_2"></a></div>
+        </div>
+        <div class="navfooter_1 mg_l_21">
+            <div class="navfooter_2" id="foot_5"><a href="my.html"><img src="img/my.png" class="wth_100 nft_1"></a></div>
+        </div>
+    </div>
+    <div style="height: 0.88rem"></div>
+    <div class="swiper-container1 swiper-container">
+        <div class="swiper-wrapper sw_hei">
+            <div class="swiper-slide chear"><img src="img/1_01.png" class="chear1"><img src="img/circle.png" class="close"></div>
+            <div class="swiper-slide conten"><img src="img/1_02.png" class="conten1"></div>
+            <div class="swiper-slide delate"><img src="img/delete.png" class="delate1"></div>
+        </div>
+    </div>
+    <div class="swiper-container2 swiper-container">
+        <div class="swiper-wrapper sw_hei">
+            <div class="swiper-slide chear"><img src="img/1_01.png" class="chear1"><img src="img/circle.png" class="close"></div>
+            <div class="swiper-slide conten"><img src="img/1_02.png" class="conten1"></div>
+            <div class="swiper-slide delate"><img src="img/delete.png" class="delate1"></div>
+        </div>
+    </div>
+    <div class="swiper-container3 swiper-container">
+        <div class="swiper-wrapper sw_hei">
+            <div class="swiper-slide chear"><img src="img/1_01.png" class="chear1"><img src="img/circle.png" class="close"></div>
+            <div class="swiper-slide conten"><img src="img/1_02.png" class="conten1"></div>
+            <div class="swiper-slide delate"><img src="img/delete.png" class="delate1"></div>
+        </div>
+    </div>
+    <div class="jiesuan cl">
+        <div class="left all">
+            <img src="img/circle.png" id="all">
+            <p class="fon mt_a">全选</p>
+        </div>
+        <div class="right">
+            <img src="img/balance.png" class="balance">
+        </div>
+        <div class="right">
+            <p>总计：<span>&yen;</span><span class="num1">0</span></p>
+            <p class="fon">(<span class="num2">0</span>件)顺风包邮</p>
+        </div>
+    </div>
+<div style="height: 3rem"></div>
+
+
+
+
+</body>
+    <script src="js/auto-size.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var mySwiper1 = new Swiper('.swiper-container1',{
+            slidesPerView : 'auto',
+            onTransitionEnd: function(swiper){
+                if(swiper.progress==1){
+                    swiper.activeIndex=swiper.slides.length-1
+                }
+            }
+        })
+        var mySwiper2 = new Swiper('.swiper-container2',{
+            slidesPerView : 'auto',
+            onTransitionEnd: function(swiper){
+                if(swiper.progress==1){
+                    swiper.activeIndex=swiper.slides.length-1
+                }
+            }
+        })
+        var mySwiper3 = new Swiper('.swiper-container3',{
+            slidesPerView : 'auto',
+            onTransitionEnd: function(swiper){
+                if(swiper.progress==1){
+                    swiper.activeIndex=swiper.slides.length-1
+                }
+            }
+        })
+        $('.nav_2').click(function(){
+			if(mySwiper1.realIndex==1&&mySwiper3.realIndex==1&&mySwiper2.realIndex==1){
+				mySwiper1.slideTo(0);
+	        	mySwiper2.slideTo(0);
+	        	mySwiper3.slideTo(0);
+			}
+			else{
+	        	mySwiper1.slideTo(2);
+	        	mySwiper2.slideTo(2);
+	        	mySwiper3.slideTo(2);
+			}
+        })
+        $('.swiper-container').on('touchend', function() {
+			if(mySwiper1.realIndex==1||mySwiper3.realIndex==1||mySwiper2.realIndex==1){
+				var index = $(".swiper-container").index(this);
+//				for(var i=1;i<=$('.swiper-container').length;i++){
+//					if(i==index+1){
+//						continue;
+//					}
+//					('mySwiper'+i).slideTo(0)
+//  			}
+				if($('.swiper-container').length==3){
+					switch(index){
+	    				case 0:
+	//	    				mySwiper1.slideTo(1);
+				        	mySwiper2.slideTo(0);
+				        	mySwiper3.slideTo(0);
+				        	break;
+				        case 1:
+				        	mySwiper1.slideTo(0);
+	//			        	mySwiper2.slideTo(1);
+				        	mySwiper3.slideTo(0);
+				        	break;
+				        case 2:
+				        	mySwiper1.slideTo(0);
+				        	mySwiper2.slideTo(0);
+	//			        	mySwiper3.slideTo(1);
+							break;
+	    			}
+				}
+				else{
+					if($('.swiper-container').length==2&&$('.swiper-container1')==false){
+						switch(index){
+							case 0:
+					        	mySwiper3.slideTo(0);
+					        	break;
+					        case 1:
+					        	mySwiper2.slideTo(0);
+					        	break;
+				       }
+					}
+					else{
+						if($('.swiper-container').length==2&&$('.swiper-container2')==false){
+							switch(index){
+								case 0:
+						        	mySwiper3.slideTo(0);
+						        	break;
+						        case 1:
+						        	mySwiper1.slideTo(0);
+						        	break;
+					       }
+						}
+						else{
+							switch(index){
+								case 0:
+						        	mySwiper2.slideTo(0);
+						        	break;
+						        case 1:
+						        	mySwiper1.slideTo(0);
+						        	break;
+					       }
+						}
+					}
+				}
+    			
+//				alert('a')
+			}
+        })
+        
+        $('#all').click(function () {
+            if($('#all').attr('src')=='img/circle.png'){
+                $('#all').attr('src','img/circle%20choose.png')
+                $('.close').attr('src','img/circle%20choose.png')
+                jisuan()
+            }
+            else {
+                $('.close').attr('src','img/circle.png')
+                $('#all').attr('src','img/circle.png')
+                jisuan()
+            }
+        })
+
+        $('.close').click(function () {
+            if($(this).attr('src')=='img/circle.png'){
+                $(this).attr('src','img/circle%20choose.png')
+                jisuan()
+            }
+            else {
+                $(this).attr('src','img/circle.png')
+                jisuan()
+            }
+        })
+//        $('.delate').click(function () {
+//            $(this).parent().parent().remove()
+//            $('.num1').html(2379*($('.swiper-container').length))
+//        })
+        $('.delate').click(function () {
+            $(this).parent().parent().remove()
+            jisuan()
+        })
+        function jisuan() {
+            var num=0;
+            for(var i=0;i<$('.chear1').length;i++){
+                if($('.close:eq('+i+')').attr('src')=='img/circle%20choose.png'){
+                    num++;
+                }
+            }
+            if(num==$('.chear1').length){
+            	$('#all').attr('src','img/circle%20choose.png')
+            }
+            else{
+            	$('#all').attr('src','img/circle.png')
+            }
+            $('.num1').html(2379*num)
+            $('.num2').html(num)
+        }
+//        console.log(num);
+//        alert($('.swiper-container').index())
+    </script>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+    <title>专题页</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .cover_open{
+            width: 100%;
+        }
+
+        .nav{
+            height: 0.88rem;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 999;
+        }
+        .nav_1{
+            height: 0.8rem;
+            width: 0.8rem;
+            position: absolute;
+            left: 0.44rem;
+            bottom: 0.04rem;
+        }
+        .nav_2{
+            height: 0.8rem;
+            width: 0.8rem;
+            position: absolute;
+            right: 0.44rem;
+            bottom: 0.04rem;
+        }
+        .nav_1p {
+            position: relative;
+            width: 0.2rem;
+            top: -0.25rem;
+            left: 0.24rem;
+        }
+        .nav_2p {
+            position: relative;
+            width: 0.18rem;
+            top: -0.33rem;
+            left: 0.32rem;
+        }
+        .right_top{
+            position: absolute;
+            right: 0.66rem;
+            top:0.8rem;
+            width: 1.9rem;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="nav">
+    <a href="javascript:history.go(-1);"><div class="nav_1"><img src="img/arrow.png" class="nav_1p"></div></a>
+    <a href="#"><div class="nav_2"><img src="img/more@1x.png" class="nav_2p"></div></a>
+    <a href="collect.html"><img src="img/more2.png" class="right_top"></a>
+</div>
+<div><img src="img/n2@1x.png" class="cover_open"></div>
+</body>
+<script src="js/auto-size.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    $('.nav_2p').click(function () {
+        $('.right_top').toggle()
+    })
+</script>
+</html>

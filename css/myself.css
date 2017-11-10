@@ -1,0 +1,135 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, li, span {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #fcf5eb;
+}
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+}
+.cl{
+    display: inline-block;
+    overflow: hidden;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.wth_100{
+    width: 100%;
+}
+
+
+
+
+.nav{
+    background: #fcf5eb;
+    height: 0.88rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+.nav_1{
+    height: 0.8rem;
+    width: 0.8rem;
+    position: absolute;
+    left: 0.44rem;
+    bottom: 0.04rem;
+}
+.nav_1p {
+    position: relative;
+    width: 0.2rem;
+    top: -0.36rem;
+    left: 0.24rem;
+}
+/*顶部*/
+.myself_bg{
+    margin-top: 0.88rem;
+    background: url("../img/myself_bg.png") no-repeat;
+}
+.top_my{
+    height: 4rem;
+    width: 100%;
+    background-size: contain;
+    position: relative;
+}
+.top_my h3{
+    font-size: 0.56rem;
+    margin-left: 0.67rem;
+    padding-top: 0.6rem;
+}
+.self_mymag{
+    width: 4rem;
+    height: 2.4rem;
+    position: absolute;
+    left: 0.37rem;
+    top: 1.5rem;
+    font-size: 0;
+}
+.head_ph{
+    width: 1.93rem;
+    position: absolute;
+    top:0.25rem;
+    left: 0.3rem;
+}
+.vip_bo{
+    width: 1.22rem;
+    position: absolute;
+    bottom: 0.68rem;
+    right: 0.28rem;
+}
+
+
+
+.ab_1{
+    width: 0.34rem;
+    position: absolute;
+    left: 5.98rem;
+    top: 9.12rem;
+}
+
+/*尺寸填写*/
+.flow_picturea{
+    width: 6.2rem;
+    margin: 0 auto;
+}
+.wth_03{
+    width: 2.72rem;
+    margin: 0 1.74rem;
+}
+.dimension{
+    width: 6.2rem;
+    font-size: 0;
+    margin: 0 auto;
+}
+.dimension p{
+    width: 100%;
+    padding-top: 0.49rem;
+    padding-bottom: 0.45rem;
+    border-bottom: 1px solid #e8e1d8;
+}
+.attribute{
+    font-size: 0.32rem;
+    color: #333;
+}
+.go_fill{
+    font-size: 0.3rem;
+    color: #666;
+}
+.arrow_right{
+    margin-left: 0.4rem;
+    vertical-align: middle;
+}
+.arrow_right1{
+    margin-left: 0.3rem;
+    vertical-align: middle;
+}
+.submit{
+    height: 2.51rem;
+}

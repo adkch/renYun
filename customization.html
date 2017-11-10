@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/cus.css"/>
+    <title>定制首页</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="javascript:history.go(-1);"><div class="nav_1"><img src="img/arrow.png" class="nav_1p"></div></a>
+        <p class="nav_cus">红韵定制</p>
+    </div>
+    <div class="nav_foorer">
+        <a href="measure.html"><img src="img/cus_btn.png" class="cus_btn"></a>
+    </div>
+    <div>
+        <div class="flow">
+            <div class="flow_picture">
+                <img src="img/procedure.png" class="wth_100">
+                <img src="img/question.png" class="ab_1">
+            </div>
+        </div>
+        <div class="like_all">
+            <div class="like_content">
+                <div class="like_content1 left"><img src="img/cus1.png" class="wth_100"></div>
+                <div class="like_content1 right"><img src="img/cus2.png" class="wth_100"></div>
+            </div>
+            <div class="like_content">
+                <div class="like_content1 left"><img src="img/cus1.png" class="wth_100"></div>
+                <div class="like_content1 right"><img src="img/cus2.png" class="wth_100"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+    <script src="js/auto-size.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+
+
+            var isloading = false;
+            function getViewportSize(w){
+                //使用指定的窗口，如果不带参数则使用当前窗口
+                w=w||window;
+                //除了IE8及更早的版本以外，其他浏览器都能用
+                if(w.innerWidth!=null)return{w:w.innerWidth,h:w.innerHeight};
+                //对标准模式下的IE（或任意浏览器）
+                var d=w.document;
+                if(document.compatMode=="CSS1Compat")
+                    return{w:d.documentElement.clientWidth,
+                        h:d.documentElement.clientHeight};
+                //对怪异模式下的浏览器
+                return{w:d.body.clientWidth,h:d.body.clientHeight};
+            }
+
+            //检测滚动条是否滚动到页面底部
+            function isScrollToPageBottom(){
+                //文档高度
+                var documentHeight=document.documentElement.offsetHeight;
+                var viewPortHeight=getViewportSize().h;
+                var scrollHeight=window.pageYOffset||document.documentElement.scrollTop||document.body.scrollTop||0;
+                return documentHeight-viewPortHeight-scrollHeight<20;
+            }
+
+            //页面滚到底部的时候加载新的图片
+            function watchScroll(){
+                if(!isScrollToPageBottom()){
+                    setTimeout(arguments.callee,900);
+                    return;
+                }else{
+                    getMore();
+                }
+            }
+
+            function getMore(){
+                var oUl=$(".like_all").clone();
+                $('body').append(oUl);
+    //            console.log($(".inf-like"));
+                isScrollToPageBottom();
+                watchScroll();
+            }
+            isScrollToPageBottom();
+            watchScroll();
+</script>
+</html>

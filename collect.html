@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/collect.css"/>
+    <title>收藏页</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="javascript:history.go(-1);"><div class="nav_1"><img src="img/arrow.png" class="nav_1p"></div></a>
+        <p class="nav_cus">收藏</p>
+    </div>
+    <div class="top_ya" style="height: 0.88rem"></div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper sw_hei">
+            <div class="swiper-slide chear"><img src="img/collect2_01.png" class="chear1"></div>
+            <div class="swiper-slide conten"><a href="particulars.html"><img src="img/collect1.png" class="conten1"></div></a>
+            <div class="swiper-slide delate"><img src="img/delate2.png" class="delate1"></div>
+        </div>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper sw_hei">
+            <div class="swiper-slide chear"><img src="img/collect2_01.png" class="chear1"></div>
+            <div class="swiper-slide conten"><a href="particulars.html"><img src="img/collect2.png" class="conten1"></div></a>
+            <div class="swiper-slide delate"><img src="img/delate2.png" class="delate1"></div>
+        </div>
+    </div>
+    <div id="bg_text"></div>
+    <a href="index.html"><div id="bg_col"></div></a>
+
+
+</body>
+    <script src="js/auto-size.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container',{
+            slidesPerView : 'auto',
+    //slidesPerView : 3.7,
+    //如果设置为auto（例如制作全屏展示时的页脚部分），最后一个slide在键盘或鼠标滚动时可能会直接跳到倒数第三个slide，
+    //此时可以手动设置activeIndex解决，如下
+            onTransitionEnd: function(swiper){
+                if(swiper.progress==1){
+                    swiper.activeIndex=swiper.slides.length-1
+                }
+            }
+
+        })
+        $('.delate1').click(function () {
+            $(this).parent().parent().parent().remove()
+            if($('.delate1').length==0){
+                $('#bg_text').html('<img src="img/col_text.png" class="col_text"/>')
+                $('#bg_col').html('<img src="img/col_logo.png" class="col_bt"/>')
+            }
+        })
+    </script>
+</html>

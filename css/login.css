@@ -1,0 +1,122 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, li, span {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #fcf5eb;
+}
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+}
+.cl{
+    display: inline-block;
+    overflow: hidden;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.wth_100{
+    width: 100%;
+}
+
+
+
+.nav{
+    height: 0.88rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+.nav_1{
+    height: 0.8rem;
+    width: 0.8rem;
+    position: absolute;
+    left: 0.44rem;
+    bottom: 0.04rem;
+}
+.nav_1p{
+    position: relative;
+    width: 0.2rem;
+    top: -0.25rem;
+    left: 0.24rem;
+
+}
+.nav_3{
+    height: 0.42rem;
+    position: absolute;
+    right: 0.61rem;
+    bottom: 0.25rem;
+    font-size: 0.28rem;
+    color: #a31515;
+    line-height: 0.42rem;
+}
+
+
+.login_bg{
+    font-size: 0;
+    height: 10.34rem;
+    width: 100%;
+    background: url("../img/login_bg.png") no-repeat;
+    background-size: contain;
+    color: #a31515;
+    padding-top: 3rem;
+}
+.login_bg p{
+    font-size: 0.32rem;
+    margin-left: 0.64rem;
+}
+.login_zh,.login_mm{
+	margin-bottom: 0.3rem;
+}
+#login_zh,#login_mm{
+    font-size: 0.4rem;
+    background: transparent;
+    border: none;
+    border-bottom: #e3b7af 1px solid;
+    margin-left: 0.63rem;
+    margin-bottom: 0.6rem;
+    outline: none;
+}
+#visual{
+    width: 0.17rem;
+    margin-left: 0.02rem;
+    margin-top: 0.05rem;
+    opacity: 0;
+}
+.kung{
+    display: inline-block;
+    width: 0.22rem;
+    height: 0.22rem;
+    background: url("../img/login_kung.png") no-repeat;
+    background-size: cover;
+    vertical-align: 0.02rem;
+    margin-left: 0.63rem;
+}
+.visual{
+    font-size: 0.28rem;
+}
+.login_btn0{
+    text-align: right;
+}
+.login_btn{
+    margin-right: 0.5rem;
+    width: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+

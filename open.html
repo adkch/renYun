@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+    <title>启动页</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .cover_open{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div><img src="img/open.png" class="cover_open"></div>
+</body>
+<script src="js/auto-size.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var countdown=null;
+    function ind(num) {
+        var count = num;
+        countdown = setInterval(CountDown, 1000);
+        function CountDown() {
+            $("#djs").html(count + "s");
+            if (count <= 0) {
+                clearInterval(countdown);
+                window.location.href='guiding.html';
+            }
+            count--;
+        }
+    }
+    ind(2)
+document.addEventListener('touchmove', function(event) {
+    var e = event||window.event;
+    var p = event.target.closest('.demo');
+    if (!p) {
+        e.preventDefault();
+    }
+},{passive:false});
+</script>
+</html>

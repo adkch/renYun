@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/service.css"/>
+    <title>客服</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="javascript:history.go(-1);"><div class="nav_1"><img src="img/arrow.png" class="nav_1p"></div></a>
+        <p class="nav_cus">小雅</p>
+    </div>
+    <div style="height: 0.88rem"></div>
+    <div><img src="img/sur_1.png" class="sur1"></div>
+    <div class="join er-mao">
+        <div class="open" id="erobot">
+
+            <div id="dibu"></div>
+        </div>
+    </div>
+    <div style="height: 1rem;"></div>
+    <div class="speak">
+        <input type="text" name="" id="con">
+    </div>
+</body>
+    <script src="js/auto-size.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	var er_hello = '美好的一天，从穿女装开始，不穿女装拒绝回答一切问题~~~';//打招呼 
+	var er_key = '8984078f2a044028ae9864ccd5750800';//填写你的 API KEY 
+	$('#dibu').before('<div class="revice" style="margin-top: 0rem"><img src="img/sur_head.png" class="surhead"><p>'+er_hello+'</p>')
+    $('#con').on('keydown',function (n) {
+        if(n.keyCode==13){
+			var a = $('#dibu'), b = $("#con"), c = $("#con").val(), d = $('#erobot'); 
+			a.before('<div class="er-t er-y"><div class="er-i"></div><div class="er-p">' + c + '</div><div class="er-clear"></div></div>'); 
+			window.scrollTo(0,d.height());
+			b.val(''); 
+			$.getJSON('http://www.tuling123.com/openapi/api?key=' + er_key + '&info=' + c, function (data) { 
+				a.before('<div><p>'+ c +'</p><img src="img/sur_head.png" class="surhead"></div>');
+				a.before('<div class="revice" style="margin-top: 0rem"><img src="img/sur_head.png" class="surhead"><p>'+data.text+'</p>')
+				window.scrollTo(0,d.height());
+			});
+        }
+//      $('#erobot').scrollTop($('#erobot').height());
+    })
+</script>
+</html>

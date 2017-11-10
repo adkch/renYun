@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/material.css"/>
+    <title>选料定款</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="javascript:history.go(-1);"><div class="nav_1"><img src="img/arrow.png" class="nav_1p"></div></a>
+        <p class="nav_cus">选料定款</p>
+    </div>
+    <div class="flow_picturea">
+        <img src="img/sdf_03.png" class="wth_03">
+        <div class="select cl">
+            <div class="left"><img src="img/1@1x.png" class="select_1"></div>
+            <div class="left"><img src="img/2@1x.png" class="select_1 m_lr_1"></div>
+            <div class="right"><img src="img/3@1x.png" class="select_1"></div>
+        </div>
+        <div class="miaoliao">
+        	<div class="swiper-container">
+			  <div class="swiper-wrapper">
+			    <div class="swiper-slide mianliao">
+            <table>
+                <caption>面料</caption>
+                <tr>
+                    <td>真丝</td>
+                    <td>桑波缎</td>
+                    <td>素绉缎</td>
+                </tr>
+                <tr>
+                    <td>杭罗</td>
+                    <td>双宫绸</td>
+                    <td>古香缎</td>
+                </tr>
+                <tr>
+                    <td>丝绒</td>
+                    <td>香云纱</td>
+                    <td>织锦缎</td>
+                </tr>
+                <tr>
+                    <td>棉麻</td>
+                    <td>桑蝉丝</td>
+                    <td>柞蚕丝</td>
+                </tr>
+                <tr>
+                    <td>杭罗</td>
+                    <td>双宫绸</td>
+                    <td>古香缎</td>
+                </tr>
+            </table>
+			    </div>
+			    <div class="swiper-slide sexi">
+            <table>
+                <caption>色系</caption>
+                <tr>
+                    <td>红色系</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="2">波良第酒红<img src="img/res1@1x.png" class="color"></td>
+                    <td>锈红<img src="img/red2@1x.png" class="color"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">波良第酒红<img src="img/res1@1x.png" class="color"></td>
+                    <td>锈红<img src="img/red2@1x.png" class="color"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">波良第酒红<img src="img/res1@1x.png" class="color"></td>
+                    <td>锈红<img src="img/red2@1x.png" class="color"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">波良第酒红<img src="img/res1@1x.png" class="color"></td>
+                    <td>锈红<img src="img/red2@1x.png" class="color"></td>
+                </tr><tr>
+                    <td colspan="2">波良第酒红<img src="img/res1@1x.png" class="color"></td>
+                    <td>锈红<img src="img/red2@1x.png" class="color"></td>
+                </tr>
+            </table>
+           </div>
+			  </div>
+			</div>
+        </div>
+        <img src="img/dfg_03.png" class="wth_03">
+        <div class="rotate">
+            <img src="img/cloth@1x.png" class="cloth">
+        </div>
+        <img src="img/fgha_03.png" class="wth_04">
+        <a href="clearing.html"><img src="img/confirm@1x.png" class="submit"></a>
+    </div>
+
+
+
+
+
+
+
+</body>
+<script src="js/auto-size.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	var mySwiper = new Swiper('.swiper-container', {
+			direction : 'vertical',
+		})
+    $(function () {
+        $('.select_1').click(function () {
+            for(let i=1;i<4;i++){
+                $('.select_1:eq('+(i-1)+')').attr('src','img/'+i+'@1x.png')
+            }
+            $(this).attr('src','img/'+$(this).attr('src')[4]+'@1a.png')
+        })
+        $('.mianliao td').click(function () {
+            $('.mianliao td').css('color','#666')
+            $(this).css('color','#a31515')
+            console.log($('.mianliao td'))
+            console.log($(this))
+        })
+        $('.sexi td').click(function () {
+            $('.sexi td').css('color','#666')
+            $(this).css('color','#a31515')
+            console.log($('.sexi td'))
+            console.log($(this))
+        })
+    })
+
+</script>
+</html>

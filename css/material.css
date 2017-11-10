@@ -1,0 +1,154 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, li, span {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #fcf5eb;
+}
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+}
+.cl{
+    display: inline-block;
+    overflow: hidden;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.wth_100{
+    width: 100%;
+}
+
+.nav{
+    background: #fcf5eb;
+    height: 0.88rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+.nav_1{
+    height: 0.8rem;
+    width: 0.8rem;
+    position: absolute;
+    left: 0.44rem;
+    bottom: 0.04rem;
+}
+.nav_1p {
+    position: relative;
+    width: 0.2rem;
+    top: -0.36rem;
+    left: 0.24rem;
+
+}
+.nav_cus{
+    width: 100%;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    text-align: center;
+    font-size: 0.36rem;
+    font-weight: 500;
+}
+
+
+/*选料定款过程*/
+.flow_picturea{
+    padding-top: 0.88rem;
+    width: 6.2rem;
+    margin: 0 auto;
+}
+.ab_1{
+    width: 0.34rem;
+    position: absolute;
+    left: 5.98rem;
+    top: 9.12rem;
+}
+.wth_03{
+    width: 2.72rem;
+    margin: 0 1.74rem;
+}
+/*选项*/
+.select{
+    width: 6.2rem;
+}
+.select_1{
+    width: 1.74rem;
+}
+.m_lr_1{
+    margin-left: 0.49rem;
+}
+.miaoliao{
+    height: 7.7rem;
+    width: 6.2rem;
+    background: url("../img/back.png") no-repeat center;
+    font-size: 0.28rem;
+    color: #666;
+    overflow: hidden;
+}
+.miaoliao table{
+    text-align: center;
+    width: 6rem;
+}
+.miaoliao caption{
+    font-size: 0.3rem;
+    color: #333;
+    margin-top: 0.2rem;
+}
+.miaoliao tr{
+    height: 0.98rem;
+    margin-top: 0.3rem;
+}
+.miaoliao td{
+    width: 2rem;
+}
+.color{
+    width: 0.5rem;
+    vertical-align: middle;
+}
+
+/*旋转图片*/
+.rotate{
+    height: 2.61rem;
+    width: 1.69rem;
+    background: url("../img/rotate@1x.png") no-repeat center;
+    margin: 0 auto;
+}
+.cloth{
+    width: 0.88rem;
+    margin-left: 0.45rem;
+}
+
+
+
+.wth_04{
+    width: 2.38rem;
+    margin: 0 1.91rem;
+}
+.submit{
+    width: 3.75rem;
+    margin-left: 1.225rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

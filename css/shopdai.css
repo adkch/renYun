@@ -1,0 +1,183 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, li, span {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #fcf5eb;
+}
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+}
+.cl{
+    display: inline-block;
+    overflow: hidden;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.wth_100{
+    width: 100%;
+}
+.bg_top{
+    height: 10.4rem;
+    background: url("../img/background@1x.png") no-repeat;
+    background-size: contain;
+}
+.nav{
+    background: #fcf5eb;
+    height: 0.88rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+.nav_2{
+    height: 0.8rem;
+    width: 0.8rem;
+    position: absolute;
+    right: 0.44rem;
+    bottom: 0.04rem;
+    font-size: 0.3rem;
+    color: #333;
+    text-align: center;
+    line-height: 0.8rem;
+}
+.nav_cus{
+    width: 100%;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    text-align: center;
+    font-size: 0.36rem;
+    font-weight: 500;
+}
+
+
+/*导航栏底部*/
+.navfooter{
+    height: 0.97rem;
+    width: 100%;
+    border-top: 1px solid rgb(225,222,217);
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    background: rgb(254,250,244);
+}
+.navfooter_1{
+    width: 1.33rem;
+    height: 100%;
+    float: left;
+}
+.mg_l_21{
+    margin-left: 0.212rem;
+}
+.navfooter_2{
+    width: 0.48rem;
+    margin: 0 auto;
+    margin-top: -0.2rem;
+}
+.navfooter_3{
+    width: 0.48rem;
+    margin: 0 auto;
+    margin-top: -0.2rem;
+}
+.navfooter_4{
+    width: 0.64rem;
+    margin: 0 auto;
+    margin-top: -0.2rem;
+}
+.div_wrapper{
+    margin-top: 0.87rem;
+    height: 6.25rem;
+}
+.nft_1{
+    vertical-align:middle;
+}
+.nft_2{
+    vertical-align:middle;
+}
+.sw_hei{
+    height: 3.04rem;
+}
+.chear{
+    width: 1rem;
+    position: relative;
+}
+.conten{
+    width: 6.5rem;
+}
+.delate{
+    width: 1.32rem;
+}
+.chear1{
+    width: 100%;
+}
+.conten1{
+    width: 100%;
+}
+.delate1{
+    width: 100%;
+}
+.close{
+    width: 0.28rem;
+    position: absolute;
+    top: 1.38rem;
+    left: 0.36rem;
+}
+.jiesuan{
+    width: 100%;
+    height: 1.29rem;
+    background: rgb(254,250,244);
+    /*line-height: 1.29rem;*/
+    margin-top: 1.3rem;
+    position: fixed;
+    bottom: 0.97rem;
+    z-index: 999;
+    border-top: 0.01rem solid #e8e1d8;
+    border-bottom: 0.01rem solid #e8e1d8;
+}
+.all{
+    height: 1.29rem;
+    position: relative;
+}
+#all{
+    width: 0.28rem;
+    position: absolute;
+    top: 0.1rem;
+    left: 0.21rem;
+}
+.mt_a{
+    margin-top: 0.5rem;
+}
+.jiesuan p{
+    font-size: 0.36rem;
+    color: #333;
+}
+.balance{
+    width: 2.4rem;
+}
+.num1{
+    font-size: 0.38rem;
+    color: #a31515;
+}
+.fon{
+    font-size: 0.22rem;
+    color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

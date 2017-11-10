@@ -1,0 +1,105 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, li, span {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #fcf5eb;
+}
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+}
+.cl{
+    display: inline-block;
+    overflow: hidden;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.wth_100{
+    width: 100%;
+}
+
+
+
+
+.nav{
+    height: 0.88rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+.nav_1{
+    height: 0.8rem;
+    width: 0.8rem;
+    position: absolute;
+    left: 0.44rem;
+    bottom: 0.04rem;
+}
+.nav_1p{
+    position: relative;
+    width: 0.2rem;
+    top: -0.25rem;
+    left: 0.24rem;
+
+}
+.login_bg{
+    font-size: 0;
+    height: 10.34rem;
+    width: 100%;
+    background: url("../img/login_first.png") no-repeat;
+    background-size: contain;
+    color: #a31515;
+    padding-top: 3rem;
+}
+.login_bg a{
+    color: #a31515;
+}
+.welcome{
+	width: 4.12rem;
+    margin-bottom: 0.6rem;
+    margin-left: 0.66rem;
+}
+.login1,.login2{
+    display: inline-block;
+    width: 6.2rem;
+    height: 1rem;
+    margin: 0.6rem 0.6rem 0rem;
+    line-height: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: 1px solid #a31515;
+    font-size: 0.3rem;
+}
+
+.login_three{
+    width: 6.5rem;
+    margin: 2.32rem 0.5rem 0.3rem;
+}
+.three_box{
+    width: 100%;
+    text-align: center;
+}
+.qq,.weixing{
+    margin: 0 0.3rem;
+    width: 0.75rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

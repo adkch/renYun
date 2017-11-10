@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
+			.nav{
+			    height: 100px;
+			    width: 100px;
+			    position: fixed;
+			    top: 0;
+			    background: white;
+			    z-index: 99999999999999999999;
+			}
+			.nav_1{
+			    height: 80px;
+			    width: 80px;
+			    left: 44px;
+			    bottom: 4px;
+			}
+			.nav_1p {
+			    position: relative;
+			    width: 20px;
+			    top: 28px;
+			    left: 36px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="nav">
+      	  <a href="javascript:history.go(-1);"><div class="nav_1"><img src="img/arrow.png" class="nav_1p"></div></a>
+    	</div>
+		<div id="allmap">
+			
+		</div>
+	</body>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=dfGoYEGXpGY4UPYZg0sgocWqwXjSdDZ2"></script>
+<script type="text/javascript">
+	var map = new BMap.Map("allmap");
+	map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);
+	
+	
+	function showInfo(e){
+		alert(e.point.lng + ", " + e.point.lat);
+		localStorage.lng=e.point.lng;
+		localStorage.lat=e.point.lat;
+	}
+	map.addEventListener("touchstart", showInfo);
+//	console.log(localStorage.lng);
+	
+	function myFun(result){
+		var cityName = result.name;
+		map.setCenter(cityName);
+	}
+	var myCity = new BMap.LocalCity();
+	myCity.get(myFun);
+</script>
+</html>

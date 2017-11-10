@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/registration.css"/>
+    <title>注册</title>
+</head>
+<body>
+<div class="nav">
+    <a href="javascript:history.go(-1);"><div class="nav_1"><img src="img/arrow.png" class="nav_1p"></div></a>
+    <div class="nav_3">
+        <a href="login_first.html">登陆</a>
+    </div>
+</div>
+
+<div class="login_bg">
+    <p class="login_zh">手机号 <input class="time"></p>
+    <input type="rel" name="" id="login_zh" placeholder="请输入您的手机号"><input class="send" id="btn" value="开始交易"></input>
+    <p class="login_mm">验证码</p>
+    <input type="text" name="" id="login_mm"><br>
+    <a href="#" id="next"><p class="login_btn0"><img src="img/login_mear.png" class="login_btn"></p></a>
+</div>
+
+
+
+
+</body>
+<script src="js/auto-size.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	document.addEventListener('touchmove', function(event) {
+    var e = event||window.event;
+    var p = event.target.closest('.demo');
+    if (!p) {
+        e.preventDefault();
+    }
+},{passive:false});
+    $(function () {
+//        $('#login_zh').onpropertychange(function () {
+//            alert($('#login_zh').val())
+//        })
+//        $('#login_zh').bind('input propertychange', function() {
+//            if ($('#login_zh').val().length == 3) {
+//                $('#login_zh').val($(this).val()+'-')
+//                if ($('#login_mm').val().length == 8) {
+//                    $('#login_zh').val($(this).val()+'-')
+//                }
+//            }
+//        })
+        $('#login_zh').bind('input propertychange', function() {
+            if($(this).val().length==11&&$('#login_zh').val()[0]=='1'){
+                $("#btn").css('opacity','1');
+            }
+            else {
+                $("#btn").css('opacity','0');
+            }
+        });
+//        if($('#login_zh').val())
+        $('#btn').click(function () {
+            var count = 60;
+            var countdown = setInterval(CountDown, 1000);
+            function CountDown() {
+                $("#btn").val("撅起屁股")
+                $("#btn").attr("disabled", true);
+                $("#btn").css('background','url(img/chosez.png)');
+                $(".time").css('opacity','1');
+                $(".time").val(count + " 秒!");
+                if (count == 0) {
+                    $("#btn").val("重新交易").removeAttr("disabled");
+                    clearInterval(countdown);
+                    $(".time").css('opacity','0');
+                }
+                count--;
+            }
+        })
+
+        $('#login_zh').bind('input change', function() {
+            if ($('#login_zh').val().length == 11&&$('#login_zh').val()[0]=='1') {
+                if ($('#login_mm').val().length == 4&&isNaN($('#login_mm').val())) {
+                	$('.login_btn').attr("src", 'img/deep_re.png');
+                	$('#next').attr('href','login2.html')
+                }
+                else {
+                    $('.login_btn').attr("src", 'img/login_mear.png');
+                    $('#next').attr('href','#')
+                }
+            }
+            else {
+                $('.login_btn').attr("src", 'img/login_mear.png');
+                $('#next').attr('href','#')
+            }
+        })
+        $('#login_mm').bind('input change', function() {
+            if ($('#login_zh').val().length == 11&&$('#login_zh').val()[0]=='1') {
+                if ($('#login_mm').val().length == 4&&isNaN($('#login_mm').val())) {
+                	$('.login_btn').attr("src", 'img/deep_re.png');
+                	$('#next').attr('href','login2.html')
+                }
+                else {
+                    $('.login_btn').attr("src", 'img/login_mear.png');
+                    $('#next').attr('href','#')
+                }
+            }
+            else {
+                $('.login_btn').attr("src", 'img/login_mear.png');
+                $('#next').attr('href','#')
+            }
+        })
+        $('#next').click(function(){
+	    	if(isNaN($('#login_zh').val())||$('#login_zh').val()[0]!='1'){
+	    		alert('您输入的手机号必须是纯数字并且第一个数字为1')
+	    	}
+	    	else{
+	    		if(isNaN($('#login_mm').val())){
+	    			alert('即将进入密码设置')
+	    		}
+	    		else{
+	    			alert('验证码不是纯数字')
+	    		}
+	    	}
+	    })
+    });
+</script>
+</html>

@@ -1,0 +1,168 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, li, span {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #fcf5eb;
+}
+.cl{
+    display: inline-block;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.wth_100{
+    width: 100%;
+}
+.bg_top{
+    height: 10.4rem;
+    background: url("../img/background@1x.png") no-repeat;
+    background-size: contain;
+}
+.nav{
+    background: #fcf5eb;
+    height: 0.88rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+.nav_1{
+    height: 0.8rem;
+    width: 0.8rem;
+    position: absolute;
+    left: 0.44rem;
+    bottom: 0.04rem;
+}
+.nav_2{
+    height: 0.8rem;
+    width: 0.8rem;
+    position: absolute;
+    right: 0.44rem;
+    bottom: 0.04rem;
+}
+.nav_1p {
+    position: relative;
+    width: 0.2rem;
+    top: -0.36rem;
+    left: 0.24rem;
+}
+.nav_2p {
+    position: relative;
+    width: 0.18rem;
+    top: -0.44rem;
+    left: 0.32rem;
+}
+.nav_cus{
+    width: 100%;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    text-align: center;
+    font-size: 0.36rem;
+    font-weight: 500;
+}
+.right_top{
+    position: absolute;
+    right: 0.66rem;
+    top:0.66rem;
+    width: 1.9rem;
+    display: none;
+}
+
+
+
+/*内容部分*/
+.particulars{
+    width: 6.1rem;
+    height: 9rem;
+    margin: 0 auto;
+    margin-top: 0.88rem;
+    background: rgba(255,255,255,0.2);
+}
+.particulars p{
+    font-size: 0.36rem;
+    text-align: right;
+    margin-right: 0.75rem;
+}
+.cloth{
+    width: 1.76rem;
+    position: relative;
+    margin-left: 0.9rem;
+}
+.zxc{
+    width: 2.38rem;
+    padding-bottom: 0.3rem;
+}
+.information{
+    width: 4.6rem;
+    margin: 0 0.75rem;
+}
+.question{
+    position: relative;
+    left: 5.5rem;
+    top: -0.5rem;
+}
+.qwe{
+    width: 3.06rem;
+    margin-left: 3.72rem;
+}
+
+
+
+
+/*导航栏底部*/
+.navfooter{
+    height: 0.97rem;
+    width: 100%;
+    border-top: 1px solid rgb(225,222,217);
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    background: rgb(254,250,244);
+}
+.navfooter_1{
+    width: 1.33rem;
+    height: 100%;
+    float: left;
+}
+.mg_l_45{
+    margin-left: 0.2rem;
+}
+.navfooter_3{
+    width: 0.65rem;
+    margin: 0 auto;
+    /*margin-top: -0.1rem;*/
+}
+.navfooter_4{
+    width: 0.64rem;
+    margin: 0 auto;
+}
+.div_wrapper{
+    margin-top: 0.87rem;
+    height: 6.25rem;
+}
+.nft_1{
+    vertical-align:0.14rem;
+}
+.nft_2{
+    vertical-align:0.16rem;
+}
+.navfooter_2{
+    font-size: 0;
+}
+.addto{
+    width: 2.16rem;
+}
+
+
+
+

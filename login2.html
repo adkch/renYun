@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/login2.css"/>
+    <title>密码设置</title>
+</head>
+<body>
+<div class="nav">
+    <a href="javascript:history.go(-1);"><div class="nav_1"><img src="img/arrow.png" class="nav_1p"></div></a>
+</div>
+
+<div class="login_bg">
+    <p class="login_mm">密码</p>
+    <input type="password" name="" id="login_mm"><br>
+    <div class="kung"><img src="img/login_click.png" id="visual"></div>
+    <span class="visual">显示密码</span>
+    <a href="#" id="xyb"><p class="login_btn0"><img src="img/login_mear.png" class="login_btn"></p></a>
+</div>
+
+
+
+
+
+
+</body>
+<script src="js/auto-size.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	document.addEventListener('touchmove', function(event) {
+    var e = event||window.event;
+    var p = event.target.closest('.demo');
+    if (!p) {
+        e.preventDefault();
+    }
+},{passive:false});
+    $('.kung').click(function () {
+        if($('#visual').css('opacity')==0){
+            $('#visual').css('opacity','1');
+            $('#login_mm').attr('type','text')
+                $('#xyb').attr('href','login.html')
+        }
+        else {
+            $('#visual').css('opacity','0');
+            $('#login_mm').attr('type','password')
+        }
+    })
+    $('#login_mm').bind('input change', function() {
+            if ($('#login_mm').val().length < 6) {
+            	$('.login_btn').attr("src", 'img/login_mear.png');
+                $('#xyb').attr('href','#')
+            }
+            else {
+            	if(isNaN($('#login_mm').val())){
+            		$('.login_btn').attr("src", 'img/login_ing.png');
+                	$('#xyb').attr('href','login.html')
+            	}
+                else{
+                	$('.login_btn').attr("src", 'img/login_mear.png');
+                	$('#xyb').attr('href','#')
+                }
+            }
+    })
+    $('.login_btn').click(function(){
+    	if(isNaN($('#login_mm').val())&&$('#login_mm').val().length >= 6){
+    		alert('注册成功')
+    	}
+    	else{
+    		alert('您的密码应至少6位并且不是纯数字')
+    	}
+    })
+</script>
+</html>

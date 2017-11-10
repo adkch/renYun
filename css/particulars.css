@@ -1,0 +1,172 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, li, span {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #fcf5eb;
+}
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+}
+.cl{
+    display: inline-block;
+    overflow: hidden;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.wth_100{
+    width: 100%;
+}
+.bg_top{
+    height: 10.4rem;
+    background: url("../img/background@1x.png") no-repeat;
+    background-size: contain;
+}
+.nav{
+    height: 0.88rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+.nav_1{
+    height: 0.8rem;
+    width: 0.8rem;
+    position: absolute;
+    left: 0.44rem;
+    bottom: 0.04rem;
+}
+.nav_2{
+    height: 0.8rem;
+    width: 0.8rem;
+    position: absolute;
+    right: 0.44rem;
+    bottom: 0.04rem;
+}
+.nav_1p {
+    position: relative;
+    width: 0.2rem;
+    top: -0.25rem;
+    left: 0.24rem;
+}
+.nav_2p {
+    position: relative;
+    width: 0.18rem;
+    top: -0.33rem;
+    left: 0.32rem;
+}
+.right_top{
+    position: absolute;
+    right: 0.66rem;
+    top:0.8rem;
+    width: 1.9rem;
+    display: none;
+}
+
+
+
+.weizhi{
+    position: absolute;
+    left: 3.5rem;
+    bottom: 1.5rem;
+}
+.lun_bottom1{
+    height: 1.1rem;
+    position: absolute;
+    bottom: 1.57rem;
+    z-index: 9999;
+}
+.lun_bottom2{
+    height: 0.6rem;
+    position: relative;
+    bottom: 0.75rem;
+    z-index: 9999;
+}
+
+
+
+
+
+/*导航栏底部*/
+.navfooter{
+    height: 0.97rem;
+    width: 100%;
+    border-top: 1px solid rgb(225,222,217);
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    background: rgb(254,250,244);
+}
+.navfooter_1{
+    width: 1.33rem;
+    height: 100%;
+    float: left;
+}
+.mg_l_45{
+    margin-left: 0.2rem;
+}
+.navfooter_3{
+    width: 0.65rem;
+    margin: 0 auto;
+    /*margin-top: -0.1rem;*/
+}
+.navfooter_4{
+    width: 0.64rem;
+    margin: 0 auto;
+}
+.div_wrapper{
+    margin-top: 0.87rem;
+    height: 6.25rem;
+}
+.nft_1{
+    vertical-align:0.14rem;
+}
+.nft_2{
+    vertical-align:0.16rem;
+}
+.navfooter_2{
+    font-size: 0;
+}
+.addto{
+    width: 2.16rem;
+}
+
+
+
+
+
+
+
+
+
+
+.par_con{
+    position: relative;
+    width: 100%;
+    top: -0.8rem;
+}
+.parcon_1{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
